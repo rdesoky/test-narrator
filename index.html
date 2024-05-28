@@ -9,14 +9,14 @@
         window.addEventListener("DOMContentLoaded",()=>{
             document.getElementById("PopupBtn").addEventListener("click",(e)=>{
                 showPopup = !showPopup;
-                document.getElementById("PopupBtn").style.display = showPopup ? "" : "none";
+                document.getElementById("Popup").style.display = showPopup ? "" : "none";
             })
         })
     </script>
 </head>
 <body>
     <button id="PopupBtn">Open</button>
-    <div id="Popup" role="dialog">
+    <div id="Popup" role="dialog" style="position:absolute;width:260px;height:260px;display:none;border:solid">
         <h3>Popup Title</h3><div>Dialog description</div></div>
 </body>
 </html>
