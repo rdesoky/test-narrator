@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrator test</title>
+    <script>
+        let showPopup = false;
+        window.addEventListener("DOMContentLoaded",()=>{
+            document.getElementById("PopupBtn").addEventListener("click",(e)=>{
+                showPopup = !showPopup;
+                document.getElementById("PopupBtn").style.display = showPopup ? "" : "none";
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="PopupBtn">Open</button>
+    <div id="Popup" role="dialog">
+        <h3>Popup Title</h3><div>Dialog description</div></div>
+</body>
+</html>
